@@ -1,0 +1,20 @@
+{
+  "name": "json-db",
+  "version": "1.0.0",
+  "description": "A simple JSON database for Node.js",
+  "author": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "license": "ISC",
+  "scripts": {
+    "start": "npx nodemon",
+    "clean": "node clean.js",
+    "deploy": "node deploy.js",
+    "build": "npm run clean && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "typescript": "^4.9.4"
+  }
+}
