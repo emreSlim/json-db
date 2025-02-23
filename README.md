@@ -1,0 +1,1 @@
+It is a relational json db inspired by typeorm. It is an alternate to full fledged db which typeorm supports. Purpose of this db is to be able to store a json or encrypted json file as a db remotely, avoiding the side-effects of ephemeral nature of server environment. 

@@ -1,7 +1,7 @@
 {
-  "name": "json-db",
-  "version": "1.0.0",
-  "description": "A simple JSON database for Node.js",
+  "name": "json-relational-db",
+  "version": "1.0.1",
+  "description": "A simple relational JSON database",
   "author": "",
   "main": "build/index.js",
   "types": "build/index.d.ts",
