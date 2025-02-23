@@ -42,12 +42,16 @@ var io = readLine.createInterface({ input: stdin, output: stdout });
 
 try {
   io.question("No error found. Proceed to publish? Yes/No: ", (userInput) => {
-    if (userInput === "Yes") {
-      console.log("publishing...");
-      execSync("npm publish");
-      fs.writeFileSync(p, upgradedVersion);
-    } else {
-      console.log("skipped publishing.");
+    try {
+      if (userInput === "Yes") {
+        console.log("publishing...");
+        execSync("npm publish");
+        fs.writeFileSync(p, upgradedVersion);
+      } else {
+        console.log("skipped publishing.");
+        throw new Error("Publishing cancelled");
+      }
+    } catch (e) {
       fs.writeFileSync(p, original);
     }
 
