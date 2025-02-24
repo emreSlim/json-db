@@ -1,5 +1,14 @@
 export interface JsonDBConfig {
+  /**
+   *  A method that fetches a JSON object from source location and returns it
+   * @returns Promise<object>
+   */
   downloadDbJson: () => Promise<object>;
+  /**
+   *  A method that takes an object and uploads it back to the source location
+   * @param object
+   * @returns Promise<void>
+   */
   uploadDbJson: (object: object) => Promise<void>;
 }
 
