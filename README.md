@@ -1,6 +1,8 @@
 
 ## Description
-It is a relational json db inspired by typeorm. It is an alternate to full-fledged relational db which typeorm supports. Purpose of this db is to be able to store a json or encrypted json file as a db remotely, avoiding the side-effects of ephemeral nature of server environment. To be able to achieve 
+It is a relational json db inspired by typeorm. It is an alternate to full-fledged relational db which typeorm supports. Purpose of this db is to be able to store a json or encrypted json file as a db remotely, avoiding the side-effects of ephemeral nature of server environment. 
+
+This DB is recommended to use for your nestjs/nodejs: lightweight/hobby projects, prototypes, portfolios etc.
 
 ## Usage
 Below are the steps to use this library.
