@@ -1,6 +1,6 @@
 {
   "name": "json-relational-db",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple relational JSON database",
   "author": "",
   "main": "build/index.js",
